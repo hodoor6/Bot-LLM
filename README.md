@@ -1,48 +1,189 @@
-# LLM Chatbot
+# 🤖 Project - BotLLM — AI Assistant for Your Internal Company Knowledge
 
-The LLM Chatbot example demonstrates how an ICP smart contract can be used to interact with a large language model (LLM) to generate text. The user can input a prompt, and the smart contract will use the LLM to generate a response.
-The response is then returned to the user, and the user can submit some follow-up prompts to continue the conversation.
+## 🧠 Summary
 
-This application's logic is written in [Rust](https://internetcomputer.org/docs/building-apps/developer-tools/cdks/rust/intro-to-rust), a primary programming language for developing canisters on ICP.
+This project was created for the WCHL25 hackathon. We focused on delivering a minimal but functional prototype that demonstrates the core value of our idea.
 
-## Deploying from ICP Ninja
+## 📌 One-liner  
+BotLLM helps teams instantly access internal knowledge by combining company documents with a powerful AI assistant.
 
-When viewing this project in ICP Ninja, you can deploy it directly to the mainnet for free by clicking "Deploy" in the upper right corner. Open this project in ICP Ninja:
+---
 
-[![](https://icp.ninja/assets/open.svg)](https://icp.ninja/i?g=https://github.com/dfinity/examples/rust/llm_chatbot)
+## 🧠 What is BotLLM?
 
-## Project structure
+**BotLLM** is a chatbot powered by Large Language Models (LLMs) that understands natural language and answers questions using your company's internal knowledge.
 
-The `/backend` folder contains the Rust smart contract:
+It connects to your internal documentation — such as sales guides, team policies, onboarding instructions — and allows employees to simply ask questions and get instant, relevant answers.
 
-- `Cargo.toml`, which defines the crate that will form the backend
-- `lib.rs`, which contains the actual smart contract, and exports its interface
+If the answer isn’t in the company knowledge base, the bot uses ChatGPT (or another LLM) as a fallback, clearly marked as AI-generated.
 
-The `/frontend` folder contains web assets for the application's user interface. The user interface is written using the React framework.
+---
 
-## Continue building locally
+## 💡 Key Features
 
-To migrate your ICP Ninja project off of the web browser and develop it locally, follow these steps.
-To open this project in ICP Ninja, click [here](https://icp.ninja/i?g=https://github.com/dfinity/examples/tree/master/rust/llm_chatbot).
+- 🤖 Natural language Q&A with company-specific answers 
+- 📁 Connects to internal sources: PDFs, Notion, Google Docs
+- 📫 Automatic fallback to general LLM when needed 
+- 🧠 OpenAI/ChatGPT fallback integration  
+- 🌐 Real-time answers in Web browser 
+- 🧩 Modular, customizable architecture  
 
-### 1. Download your project from ICP Ninja using the 'Download files' button on the upper left corner under the pink ninja star icon.
+---
 
-### 2. Setting up Ollama
+## 📸 Screenshots
+<small>Bot interface: What’s our Q3 commission policy?</small>  
 
-To be able to test the agent locally, you'll need a server for processing the agent's prompts. For that, we'll use `ollama`, which is a tool that can download and serve LLMs.
-See the documentation on the [Ollama website](https://ollama.com/) to install it. Once it's installed, run:
+<img width="600" height="600" alt="What’s our Q3 commission policy?" text-align: center src="https://github.com/user-attachments/assets/f03f6fac-0cc0-4929-bed8-8dbd90346a1a" />
 
+<small>Answer extracted from internal company documentation</small> 
+
+<img width="600" height="600" alt="Answer extracted from internal company documentation" text-align: center  src="https://github.com/user-attachments/assets/b73c90ed-14c3-4671-8673-9442f4cd71e4" />
+
+---
+
+## 🔧 How It Works
+
+### Built with:
+- 🦀 Rust (canisters written in Rust)
+- 🧠 LLM assistant (architecture, construction, and material estimation)
+- 💾 DFINITY (Internet Computer Protocol)
+
+---
+
+### 🧠 Architecture
+
+- **Frontend**: HTML + JS (simple UI)  
+- **Backend**: Rust + FastAPI  
+- **AI**: OpenAI GPT-4, FAISS vector embeddings  
+- **Hosting**: Internet Computer Protocol (ICP), GitHub Codespaces
+- **Knowledge parsing**: Markdown / PDF to vector embeddings
+
+---
+
+## 🔐 Identity & Access
+
+All logic is permissioned using identity signatures via the Internet Identity protocol. Canisters validate the caller for sensitive operations.
+
+---
+
+### 📁 Repository Structure
+
+```bash
+/frontend       # UI logic  
+/backend        # API + vector search  
+/canisters      # ICP canisters  
+/scripts        # Deployment utilities  
+README.md       # This file
 ```
-ollama serve
-# Expected to start listening on port 11434
+---
+
+## ▶️ Run Locally
+
+
+## 💻 How It Works
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/hodoor6/Bot-LLM.git
+   cd Bot-LLM
+
+2. Install dependencies:
+   ```bash
+     npm install
+
+3. Deploy canisters (local or testnet):
+```bash
+  dfx start --background
+  dfx deploy
 ```
 
-The above command will start the Ollama server, so that it can process requests by the agent. Additionally, and in a separate window, run the following command to download the LLM that will be used by the agent:
-
+5. Run the app:
+```bash
+  npm run dev
 ```
-ollama run llama3.1:8b
+
+(Optional) Deploy to ICP:
+
+  ```bash
+  dfx start --background
+  dfx deploy
+  dfx canister call <your_canister> <your_method>
 ```
 
-The above command will download an 8B parameter model, which is around 4GiB. Once the command executes and the model is loaded, you can terminate it. You won't need to do this step again.
+### ▶️ Make sure you have:
+- [DFINITY SDK](https://internetcomputer.org/docs/current/developer-docs/setup/sdk-installation/)
+- Rust + cargo + `ic-cdk` libraries
 
-### 3. Open the `BUILD.md` file for further instructions.
+### ▶️ How to create and deploy a canister to the mainnet IC
+
+1. Install the dfx utility https://internetcomputer.org/docs/building-apps/getting-started/install
+2. Start a local copy of dfx - dfx start
+3. Create an identity in the local environment - dfx identity new <name of the hamman>. You can create an identity pattern to test your supplement.
+4. Get the code  to get the cycles
+5. Viconati command dfx wallet redeem-faucet-coupon <coupon code>
+6. Check your dfx wallet balance - there may be 20 trillion cycles
+7. Build your project - dfx build
+8. Deploy the canister to the mainnet - dfx deploy --with-cycles <number of cycles> <canister name>
+
+---
+
+##  🎯 Example Use Case
+A sales manager types:
+Query: “What’s our Q3 commission policy?”
+Response: BotLLM finds the relevant section in internal documents a company and returns a clear answer. 
+If no match is found, it responds via ChatGPT and marks it as "AI-generated".
+
+## 🚀 Why It Matters
+Companies lose time and efficiency due to scattered, hard-to-access internal knowledge. BotLLM bridges this gap by becoming a “single point of truth” — instantly accessible, always available, smart enough to understand context.
+
+##  🎥 Demo Video
+🔗 Watch the live demo
+
+🧑‍💻 Team
+Mukoka – Product Manager & UШ
+
+Oleksii K.  – AI & Backend Developer
+
+DoraHacks IDs: @U_90a02c27cffd9b, @U_185657f84894f4
+
+##  🔮 Plan further
+
+✅ Role-Based Access Model (RBAC)
+
+✅ Add real-time vector index updates
+
+✅ Role-based access and chat history
+
+✅ Slack & Teams integration
+
+✅ Multilingual support
+
+✅ Internal knowledge base integration (PDFs, Notion, Google Docs)
+
+✅ UI polish + multi-language support
+
+
+
+##  📫 Feedback
+
+Telegram: @phpprogramist
+
+Email: klimcukaleksey@gmail.com
+
+🧪 Live demo: https://vyt5s-lqaaa-aaaak-quiuq-cai.icp0.io/
+
+📄  DoraHacks BUIDL page: https://dorahacks.io/buidl/27122/
+
+💻 GitHub https://github.com/hodoor6/Bot-LLM
+
+
+
+## Contributors
+
+- hodoor (@hodoor 6)
+
+
+## License
+
+This project is licensed under the MIT License.  
+See the [LICENSE.md](LICENSE.md) file for more details.
