@@ -33,7 +33,8 @@ If the answer isn’t in the company knowledge base, the bot uses ChatGPT (or an
 ## 📸 Screenshots
 <small>Bot interface: What’s our Q3 commission policy?</small>  
 
-<img width="600" height="600" alt="What’s our Q3 commission policy?" text-align: center src="https://github.com/user-attachments/assets/f03f6fac-0cc0-4929-bed8-8dbd90346a1a" />
+<img width="600" height="600" alt="What’s our Q3 commission policy?" text-align: center src="https://github.com/user-attachments/assets/90250b45-7c64-4ad4-883c-5450c2ed7a6f" />
+
 
 <small>Answer extracted from internal company documentation</small> 
 
