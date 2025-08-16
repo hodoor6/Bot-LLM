@@ -141,9 +141,12 @@ Companies lose time and efficiency due to scattered, hard-to-access internal kno
 🔗 Watch the live demo
 
 🧑‍💻 Team
-Mukoka – Product Manager & UШ
 
-Oleksii K.  – AI & Backend Developer
+Mukoka – Product Manager & UI
+
+Oleksii K.  – Backend Developer & AI 
+
+Olena - Business Аnalyst & QA
 
 DoraHacks IDs: @U_90a02c27cffd9b, @U_185657f84894f4
 
