@@ -143,20 +143,29 @@ https://drive.google.com/drive/folders/1lYzpHXsYYZYDL_890YcQ8MTy2iQdnGo_?usp=sha
 
 
 Demo Video - How BotLLM Works.
+
 https://youtu.be/_8ceIhdM3xg
+
 https://github.com/user-attachments/assets/554e01ea-ed8d-4658-901c-cc6755e7408f
 
 
 Pitch Deck and Video - BotLLM - Investor Pitch Deck 
+
 https://youtu.be/75AeIwEkxDw
+
 https://drive.google.com/file/d/18GpeSVoBCMyOXyskLiSfcVhquA9Br-lU/view?usp=sharing
+
 https://github.com/user-attachments/assets/a16127b4-431b-4395-975c-8d78421e33e5
 
 BotLLM - Investor Pitch Deck Pro
+https://drive.google.com/file/d/14a4iIgAfBi7NZBZ0QlywGce7wM-tAM6n/view?usp=sharing
+
 [BotLLM - Investor Pitch Deck.pdf](https://github.com/user-attachments/files/21998308/BotLLM.-.Investor.Pitch.Deck.pdf)
 
 BotLLM - Investor Pitch Deck 
+
 https://drive.google.com/file/d/1AFJS6RvF64scGHqkmrkeWpW-0TXykiQ7/view?usp=sharing
+
 [BotLLM - Investor Pitch Deck Pro.pdf](https://github.com/user-attachments/files/21998297/BotLLM.-.Investor.Pitch.Deck.Pro.pdf)
 
 
