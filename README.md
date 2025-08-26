@@ -140,6 +140,20 @@ Companies lose time and efficiency due to scattered, hard-to-access internal kno
 ##  🎥 Demo Video
 🔗 Watch the live demo
 
+Demo Video - How BotLLM Works.
+https://github.com/user-attachments/assets/554e01ea-ed8d-4658-901c-cc6755e7408f
+
+
+Pitch Deck and Video - BotLLM - Investor Pitch Deck 
+https://github.com/user-attachments/assets/a16127b4-431b-4395-975c-8d78421e33e5
+
+BotLLM - Investor Pitch Deck Pro
+[BotLLM - Investor Pitch Deck.pdf](https://github.com/user-attachments/files/21998308/BotLLM.-.Investor.Pitch.Deck.pdf)
+
+BotLLM - Investor Pitch Deck 
+[BotLLM - Investor Pitch Deck Pro.pdf](https://github.com/user-attachments/files/21998297/BotLLM.-.Investor.Pitch.Deck.Pro.pdf)
+
+
 🧑‍💻 Team
 
 Mukoka – Product Manager & UI
@@ -148,7 +162,7 @@ Oleksii K.  – Backend Developer & AI
 
 Olena - Business Аnalyst & QA
 
-DoraHacks IDs: @U_90a02c27cffd9b, @U_185657f84894f4
+DoraHacks IDs: @U_90a02c27cffd9b - hodoor6, @U_185657f84894f4 - hacker8ebd3a4, @U_2877ca6eb78ee1 - hacker247768f
 
 ##  🔮 Plan further
 
