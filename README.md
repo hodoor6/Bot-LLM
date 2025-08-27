@@ -204,7 +204,7 @@ Telegram: @phpprogramist
 Email: klimcukaleksey@gmail.com
 
 🧪 Live demo: https://vyt5s-lqaaa-aaaak-quiuq-cai.icp0.io/
-
+ 
 📄  DoraHacks BUIDL page: https://dorahacks.io/buidl/27122/
 
 💻 GitHub https://github.com/hodoor6/Bot-LLM
